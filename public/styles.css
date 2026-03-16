@@ -1,0 +1,107 @@
+body{
+ font-family: Arial, sans-serif;
+ background:#0f172a;
+ color:white;
+ display:flex;
+ justify-content:center;
+ padding:40px;
+ margin:0;
+}
+
+.container{
+ width:100%;
+ max-width:800px;
+}
+
+h1{
+ text-align:center;
+ margin-bottom:30px;
+ font-weight:600;
+}
+
+.card{
+ background:#1e293b;
+ padding:25px;
+ border-radius:10px;
+ margin-bottom:25px;
+ box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+input{
+ width:70%;
+ padding:10px;
+ border-radius:6px;
+ border:none;
+ outline:none;
+ margin-right:10px;
+}
+
+input:focus{
+ box-shadow:0 0 0 2px #3b82f6;
+}
+
+button{
+ padding:10px 15px;
+ border:none;
+ border-radius:6px;
+ background:#3b82f6;
+ color:white;
+ cursor:pointer;
+ transition:background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover{
+ background:#2563eb;
+}
+
+button:active{
+ transform:scale(0.97);
+}
+
+table{
+ width:100%;
+ border-collapse:collapse;
+ margin-top:15px;
+}
+
+th, td{
+ padding:12px;
+ border-bottom:1px solid #334155;
+ text-align:left;
+}
+
+th{
+ color:#cbd5f5;
+ font-weight:500;
+}
+
+tr:hover{
+ background:#1f2a44;
+}
+
+a{
+ color:#60a5fa;
+ text-decoration:none;
+}
+
+a:hover{
+ text-decoration:underline;
+}
+
+/* toast notification */
+
+.toast{
+ position:fixed;
+ bottom:30px;
+ right:30px;
+ background:#22c55e;
+ color:white;
+ padding:12px 18px;
+ border-radius:6px;
+ opacity:0;
+ transition:opacity 0.3s ease;
+}
+
+.toast.show{
+ opacity:1;
+}
